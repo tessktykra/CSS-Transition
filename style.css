@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.item{
+    border: solid 1px black;
+    margin: 20px;
+    padding: 30px;
+}
+
+.transition-button{
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: blanchedalmond;
+    color: palevioletred;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.transition-button:hover{
+    background-color: black;
+}
+
+.transition-text{
+    font-size: 20px;
+    color: aquamarine;
+    font-family: monospace;
+    transition-property: color, font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.transition-text:hover{
+    color: blueviolet;
+    font-size: 30px;
+}
+
+
+.transition-box{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transition-property: transform, background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.trasnition-box:hover{
+    transform: scale(1.5) rotate(45deg);
+    background-color: olivedrab;
+}
+
+
+.fancy-button{
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: greenyellow;
+    color: plum;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.fancy-button:hover{
+    transform: translateY(-10px) scale(1.1);
+    background-color: beige;
+    box-shadow: 0 8px 20px black;
+}
+
+.expand-text{
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: paleturquoise;
+    transition-property: letter-spacing, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.expand-text:hover{
+    letter-spacing: 20px;
+    color: cadetblue;
+}
+
+.interactive-button{
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: violet;
+    color: steelblue;
+    cursor: pointer;
+    transition-property: background-color, transform, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+
+.interactive-button:hover{
+    background-color: crimson;
+    transform:translateY(-5);
+    box-shadow: 0px 8px 15px black;
+}
+
+
+.interactive-button:active{
+    background-color: darkcyan;
+    transform: translateY(0);
+    box-shadow: 0 4px 8px black;
+}
